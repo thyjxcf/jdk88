@@ -21,13 +21,41 @@ public class MyTest5 {
         // 接口里面的变量 都是 public static final 默认的
         //为啥把 MyChild5.class ，MyParent5.class 文件删了 还可以输出
 
-        System.out.println(MyChild5.b);
+        System.out.println(MyChild5.thread);
+//        new C();
+//        new C();
     }
 }
-interface MyParent5{
-    public static int a = new Random().nextInt(3);
+interface MyGrandPa{
+    public static Thread thread1 = new Thread(){
+        {
+            System.out.println("MyGrandPa 2invoked");
+        }
+    };
+}
+interface MyParent5 extends MyGrandPa{
+    //    public static int a = new Random().nextInt(3);
+//    public static int a = 6;
+    public static Thread thread = new Thread(){
+        {
+            System.out.println("MyParent5 invoked");
+        }
+    };
 }
 
-interface MyChild5 extends MyParent5{
+//interface MyChild5 extends MyParent5{
+//    public static int b = new Random().nextInt(3);
+//}
+class MyChild5 implements MyParent5{
     public static int b = 5;
+}
+class C{
+    static {
+        System.out.println("hello");
+    }
+
+    public C() {
+        System.out.println("C");
+    }
+
 }
