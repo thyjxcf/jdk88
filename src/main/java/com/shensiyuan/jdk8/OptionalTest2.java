@@ -18,15 +18,10 @@ public class OptionalTest2 {
         employee.setName("tom");
         Employee employee1 = new Employee();
         employee.setName("peny");
-
         Company company = new Company();
         company.setName("apple");
-
         List<Employee> employeeList = Arrays.asList(employee, employee1);
-//        company.setEmployeeList(employeeList);
-
         Optional<Company> optional = Optional.ofNullable(company);
-
         System.out.println(optional.map(theCompany -> theCompany.getEmployeeList()).orElse(Collections.EMPTY_LIST));
 
     }

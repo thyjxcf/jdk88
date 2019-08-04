@@ -1,6 +1,6 @@
 package net.zdsoft.jvm.classloader;
 
-import com.sun.deploy.util.StringUtils;
+
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

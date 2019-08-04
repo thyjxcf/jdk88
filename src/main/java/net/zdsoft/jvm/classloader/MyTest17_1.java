@@ -6,6 +6,12 @@ package net.zdsoft.jvm.classloader;
  * @author luf
  * @date 2019/8/3 17:48
  */
+
+/**
+ * 关于命名空间的说明
+ * 子加载器所加载的类能够访问父加载器所加载的类
+ * 父加载器所加载的类不能访问子加载器所加载的类
+ */
 public class MyTest17_1 {
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
