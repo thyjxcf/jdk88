@@ -52,7 +52,7 @@ public class MyTest16 extends ClassLoader {
             className = className.replace(".", "\\\\");
 
             String fileName = this.path + className + fileExtention;
-
+//            fileName = "C:\\Users\\11298\\Desktop\\net\\zdsoft\\jvm\\classloader\\MyTest1.class";
             is = new FileInputStream(new File(fileName));
 
             baos = new ByteArrayOutputStream();
