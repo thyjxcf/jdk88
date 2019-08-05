@@ -1,3 +1,5 @@
 
 # Default ignored files
 /workspace.xml
+/jdk8.iml
+/misc.xml
