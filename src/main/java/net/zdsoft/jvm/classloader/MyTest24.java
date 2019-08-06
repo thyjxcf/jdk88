@@ -29,6 +29,10 @@ public class MyTest24 {
     /**
      * 具体的实现由厂商来实现，厂商实现是由应用类加载器来加载。启动类根本找不到
      * connection 是由启动类加载器加载，具体实现是由系统类加载器加载，启动类加载器加载不了
+     * JNDI
+     * 解决 双亲委托模型 本身的一些缺陷 采用 线程上下文 加载器来解决 。
+     * webapp 下  可以部署多个 应用 ，所以有多个加载器 ，自己去加载 才委托上面去加载 。
+     * spring webAppClassLoader  类加载器
      * @param args
      */
     public static void main(String[] args) {
