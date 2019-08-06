@@ -19,7 +19,7 @@ public class MyTest6 {
 }
 class Singleton{
     public static int counter1 = 1;
-//    public static int counter2 = 0;
+    public static int counter2 = 0;
     public static Singleton singleton = new Singleton();
     //在准备阶段 下面方法没有调用
     private Singleton(){
@@ -28,7 +28,7 @@ class Singleton{
         System.out.println(counter1);
         System.out.println(counter2);
     }
-    public static int counter2 = 0;
+//    public static int counter2 = 0;
 
     public static Singleton getInstance() {
         return singleton;

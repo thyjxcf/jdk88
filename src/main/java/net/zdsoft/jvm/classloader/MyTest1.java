@@ -11,7 +11,7 @@ package net.zdsoft.jvm.classloader;
 public class MyTest1 {
 
     public static void main(String[] args) {
-        System.out.println(MyChild1.str);
+//        System.out.println(MyChild1.str);
         //MyParent1 static block
         //hello world  为啥没有打印子类的 静态代码块？
         // 对于静态字段来说，只有直接定义了该字段的类才会被初始化
@@ -23,7 +23,7 @@ public class MyTest1 {
 //[Loaded net.zdsoft.jvm.classloader.MyChild1 from file:/D:/javaWebIdea/jdk8/out/production/classes/]
 //        还是会加载
 
-//        System.out.println(MyChild1.str2);
+        System.out.println(MyChild1.str2);
 //        MyParent1 static block
 //        MyChild1 static block
 //                welcome
